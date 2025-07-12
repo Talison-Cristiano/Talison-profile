@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #d1dcdf;
+    padding: 20px;
+
+    background: url('./assets/fundo-dark.png') repeat;
+    background-size: cover;
+    animation: fundoMover 30s linear infinite;
+    transition: background 0.5s ease;
+}
+
+/* ======================== Perfil ========================= */
+
+#profile {
+max-width: 400px; /* limita a largura */
+margin: 60px auto 40px; /* centraliza e dá espaço em cima/baixo */
+text-align: center;
+
+/* Efeito de vidro transparente */
+background-color: rgba(255, 255, 255, 0.12);
+border: 1px solid rgba(255, 255, 255, 0.12);
+backdrop-filter: blur(10px); /* Deixa o fundo embaçado */
+-webkit-backdrop-filter: blur(10px);
+
+/* Borda neon sutil */
+border-radius: 16px;
+box-shadow:
+    0 0 10px rgba(51, 51, 204, 0.3),
+    0 0 20px rgba(51, 51, 204, 0.2),
+    0 0 40px rgba(51, 51, 204, 0.1);
+
+padding: 20px;
+transition: background-color 0.4s, box-shadow 0.4s;
+animation: fadeInUp 0.8s ease both;
+}
+
+
+#profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+
+/* ====================== REDE SOCIAIS ====================== */
+#social-links {
+    display: flex;
+    justify-content: center;
+
+    padding: 24px;
+    font-size: 35px;
+}
+
+#social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+
+    border-radius: 50%;
+    transition: background 0.2s;
+    
+    color: #d1dcdf;
+}
+
+#social-links a:hover {
+    background-color: rgba(51, 83, 138, 0.326);
+    transform: scale(1.1);
+    box-shadow: 0 0 12px rgba(4, 4, 170, 0.4);
+}
+
+
+
+/* ===================== ANIMAÇÃO PERFIL ==================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
+@keyframes neonPulse {
+    0% {
+        box-shadow: 0 0 10px rgba(51, 51, 204, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(42, 42, 207, 0.74);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(18, 7, 119, 0.584);
+    }
+}
