@@ -3,10 +3,9 @@ body {
     color: #d1dcdf;
     padding: 20px;
 
-    background: url('./assets/fundo-dark.png') repeat;
+    background: url('./assets/plano-de-fundo.png') no-repeat;
     background-size: cover;
-    animation: fundoMover 30s linear infinite;
-    transition: background 0.5s ease;
+    height: 672px;
 }
 
 /* ======================== Perfil ========================= */
